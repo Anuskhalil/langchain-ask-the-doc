@@ -25,6 +25,18 @@ def generate_response(uploaded_file, openai_api_key, query_text):
 
 # Page title
 st.set_page_config(page_title='AKhalil-1.0 GPT 🤖 ')
+# Set background color
+# This line sets the background color to a light shade of blue
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #f0f9ff;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 st.title('AKhalil-1.0 GPT 🤖')
 
 # File upload
