@@ -25,7 +25,7 @@ def generate_response(uploaded_file, openai_api_key, query_text):
 
 # Page title
 st.set_page_config(page_title='AKhalil-1.0 GPT 🤖 ')
-st.title('🦜🔗 Ask the Doc App')
+st.title('AKhalil-1.0 GPT 🤖')
 
 # File upload
 uploaded_file = st.file_uploader('Upload an article', type='txt')
