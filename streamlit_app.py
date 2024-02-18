@@ -23,8 +23,21 @@ def generate_response(uploaded_file, openai_api_key, query_text):
         return qa.run(query_text)
 
 
-# Page title and configuration
-st.set_page_config(page_title='AKhalil-1.0 GPT 🤖', page_icon=':robot_face:', layout='wide', initial_sidebar_state='expanded', background_color='#f0f9ff')
+# Page title
+st.set_page_config(page_title='AKhalil-1.0 GPT 🤖', page_icon=':robot_face:', layout='wide', initial_sidebar_state='expanded')
+
+# Set background color
+# This line sets the background color to a light shade of blue
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #f0f9ff;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.title('AKhalil-1.0 GPT 🤖')
 
